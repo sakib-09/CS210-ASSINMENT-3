@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page">
+    <main class="form-container">
+        <h2>Sign Up</h2>
+
+        <form id="signupForm" action="dashboard.html" method="post">
+
+            <label for="signupEmail">Email:</label>
+            <input type="text" id="signupEmail" name="email" />
+
+            <label for="signupNickname">Nickname:</label>
+            <input type="text" id="signupNickname" name="nickname" />
+
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="password" />
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirm_password" />
+
+            <div class="center">
+                Already Have An Account?
+                <a href="login.html">Log In</a>
+            </div>
+
+            <div class="center">
+                <button type="submit">Sign Up</button>
+            </div>
+
+        </form>
+    </main>
+</div>
+
+<script src="js/validation.js"></script>
+</body>
+</html>

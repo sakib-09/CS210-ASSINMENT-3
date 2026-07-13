@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Info</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page">
+
+    <header>
+        <button class="logo">
+            <a href="dashboard.html">Dashboard</a>
+        </button>
+        <h1>Gaming Center</h1>
+        <button class="logo">
+            <a href="login.html">Sign out</a>
+        </button>
+    </header>
+
+    <main class="form-container">
+        <h2>User Preferences</h2>
+
+        <form id="userInfoForm" action="dashboard.html" method="post">
+
+            <label for="userNickname">Nickname:</label>
+            <input type="text" id="userNickname" name="nickname" />
+
+            <label for="avatarPath">Avatar Path:</label>
+            <input type="text" id="avatarPath" name="avatar" placeholder="images/avatar.png" />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" />
+
+            <div class="profile-actions">
+                <button type="submit">Save Changes</button>
+            </div>
+
+        </form>
+            <a href="history.html">
+                <button>Game History</button>
+            </a>
+        </div>
+
+        <div class="center">
+            <button class="delete">Delete Account</button>
+        </div>
+    </main>
+
+</div>
+
+<script src="js/validation.js"></script>
+</body>
+</html>

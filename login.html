@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page">
+    <main class="form-container">
+        <h2>Log In</h2>
+
+        <form id="loginForm" action="dashboard.html" method="post">
+
+            <label for="loginEmail">Email:</label>
+            <input type="text" id="loginEmail" name="email" />
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" />
+
+            <div class="center">
+                New User? <a href="sign-up.html">Sign Up</a>
+            </div>
+
+            <div class="center">
+                <button type="submit">Log In</button>
+            </div>
+
+        </form>
+    </main>
+</div>
+
+<script src="js/validation.js"></script>
+</body>
+</html>

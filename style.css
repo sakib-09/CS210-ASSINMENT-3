@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* ===== PAGE GRID ===== */
+.page {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #7b7cf6;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    color: #ffffff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo span {
+    font-size: 1.5em;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    background-color: #bdbdbd;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 40px;
+}
+
+/* ===== FORMS ===== */
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+}
+
+input {
+    width: 150%;
+    padding: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+
+}
+
+button, input[type="submit"] {
+    margin-top: 40px;
+    padding: 15px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-color: #bdbdbd;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ===== DASHBOARD GAMES ===== */
+.dashboard-title-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+/* Profile button */
+.round-btn {
+    background-color: #bdbdbd;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.game {
+    background-color: #e0e0e0;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* ===== PROFILE ===== */
+.avatar {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #00cc44, #ccffcc);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.profile-actions {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 40px;
+}
+
+.delete {
+    background-color: #ff4d4d;
+    color: #ffffff;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    height: 10px;
+}
+
+th, td {
+    border: 5px solid #000000;
+    padding: 15px;
+    background-color: #e0e0e0;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: #a94442;
+    font-size: 0.85em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
